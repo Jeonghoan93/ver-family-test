@@ -119,3 +119,6 @@ function showAbout() {
     "Select three points to draw a parallelogram and a circle. then click one of the points to move it."
   );
 }
+
+document.querySelector("#resetButton").addEventListener("click", resetCanvas);
+document.querySelector("#aboutButton").addEventListener("click", showAbout);
