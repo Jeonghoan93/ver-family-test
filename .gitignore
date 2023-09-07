@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Distribution folder
+dist/
+
+# npm debug logs
+npm-debug.log*
+
+# Editor folders/files
+*.swp
+*.swo
+*.idea/
+*.vscode/
+.DS_Store
+
+# Package locks (depending on your team's preference; some prefer to commit them)
+#package-lock.json
