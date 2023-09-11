@@ -78,8 +78,8 @@ function drawShapes() {
     let area = base * height;
 
     let r = Math.sqrt(area / Math.PI);
-    let centerX = (points[0].x + points[1].x + points[2].x) / 3;
-    let centerY = (points[0].y + points[1].y + points[2].y) / 3;
+    let centerX = (points[0].x + points[1].x + points[2].x + fourthPoint.x) / 4;
+    let centerY = (points[0].y + points[1].y + points[2].y + fourthPoint.y) / 4;
 
     ctx.strokeStyle = "yellow";
     ctx.beginPath();
@@ -122,3 +122,21 @@ function showAbout() {
 
 document.querySelector("#resetButton").addEventListener("click", resetCanvas);
 document.querySelector("#aboutButton").addEventListener("click", showAbout);
+
+// info about program
+document.getElementById(
+  "point1"
+).textContent = `Point 1: (${points[0].x.toFixed(2)}, ${points[0].y.toFixed(
+  2
+)})`;
+document.getElementById(
+  "point2"
+).textContent = `Point 2: (${points[1].x.toFixed(2)}, ${points[1].y.toFixed(
+  2
+)})`;
+document.getElementById(
+  "point3"
+).textContent = `Point 3: (${points[2].x.toFixed(2)}, ${points[2].y.toFixed(
+  2
+)})`;
+document.getElementById("area").textContent = `Area: ${area.toFixed(2)}`;

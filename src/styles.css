@@ -24,6 +24,13 @@ canvas {
   border-radius: 5px;
 }
 
+#point1,
+#point2,
+#point3,
+#area {
+  margin: 10px 0;
+}
+
 #info {
   display: flex;
   flex-direction: row;
