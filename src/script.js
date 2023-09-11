@@ -102,7 +102,7 @@ function drawShapes() {
     ).textContent = `Point 3: (${points[2].x.toFixed(2)}, ${points[2].y.toFixed(
       2
     )})`;
-    document.getElementById("area").textContent = area.toFixed(2);
+    document.getElementById("area").textContent = `Area: ${area.toFixed(2)}`;
   }
 }
 
