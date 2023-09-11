@@ -108,6 +108,8 @@ function drawShapes() {
 function resetCanvas() {
   points = [];
   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // reset info
   document.getElementById("point1").textContent = "Point 1: (---, ---)";
   document.getElementById("point2").textContent = "Point 2: (---, ---)";
   document.getElementById("point3").textContent = "Point 3: (---, ---)";
