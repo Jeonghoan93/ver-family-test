@@ -86,6 +86,7 @@ function drawShapes() {
     ctx.arc(centerX, centerY, r, 0, 2 * Math.PI);
     ctx.stroke();
 
+    // info about program
     document.getElementById(
       "point1"
     ).textContent = `Point 1: (${points[0].x.toFixed(2)}, ${points[0].y.toFixed(
@@ -124,21 +125,3 @@ function showAbout() {
 
 document.querySelector("#resetButton").addEventListener("click", resetCanvas);
 document.querySelector("#aboutButton").addEventListener("click", showAbout);
-
-// info about program
-document.getElementById(
-  "point1"
-).textContent = `Point 1: (${points[0].x.toFixed(2)}, ${points[0].y.toFixed(
-  2
-)})`;
-document.getElementById(
-  "point2"
-).textContent = `Point 2: (${points[1].x.toFixed(2)}, ${points[1].y.toFixed(
-  2
-)})`;
-document.getElementById(
-  "point3"
-).textContent = `Point 3: (${points[2].x.toFixed(2)}, ${points[2].y.toFixed(
-  2
-)})`;
-document.getElementById("area").textContent = `Area: ${area.toFixed(2)}`;
